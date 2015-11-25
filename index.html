@@ -3,27 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Andrew Cameron</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
 		<img src="images/poster.jpg" alt="Want It All Poster">
-		<div class="headerText"><p>Andrew Cameron Want It All</p></div>
+		<div class="headerText"><h1>Andrew Cameron Want It All</h1></div>
 	</header>
-	<section id="instafeed" class="instagram">
+	
+	<section class="instagram">
+		<h2>Instragam</h2>
+		<div id="instafeed"></div>
 		
 	</section>
 
+	<section class="bio">
+		<h2>Bio</h2>
+		<p>Founding member of both Tiny Danza and Dufferin '83, Andrew Cameron makes his solo debut with the self-directed video "Want It All", and Ep "Coyote Off A Cliff." Some past collaborations include Jimmy Harry (Pink, Ke$ha, Madonna), two time Juno nominee Fresh Kils and Juno nominated Alyssa Reid. Coyote Off A Cliff features production from Austrailia's M-PHAZES and Cam Bluff, Toronto's own Rich Kidd, and Think Twice.</p>
+	</section>
+
+	<section class="gallery">
+		<div class="main-gallery">
+			<div class="gallery-cell"><img src="images/photo1.jpg"></div>
+			<div class="gallery-cell"><img src="images/photo2.jpg"></div>
+			<div class="gallery-cell"><img src="images/photo3.jpg"></div>
+			<div class="gallery-cell"><img src="images/photo4.jpg"></div>
+		</div>
+		<a href="#">Media tools</a>
+	</section>
+
+	<section class="socialMedia">
+		<a href="http://www.soundcloud.com/acamofficial"><i class="fa fa-soundcloud"></i></a>
+		<a href="https://www.facebook.com/ACAMofficial"><i class="fa fa-facebook-official"></i></a>
+		<a href="https://twitter.com/acamofficial"><i class="fa fa-twitter"></i></a>
+	</section>
+
+	<section class="contact">
+		<a href="mailto:info@andrewcameronofficial.com">info@andrewcameronofficial.com</a>
+	</section>
+
+	<footer>
+		<p>&copy; <span class="year"></span></p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
-	<script type="text/javascript">
-	    var feed = new Instafeed({
-	        get: 'user',
-	        accessToken: '416569799.1677ed0.1e2bf2e066ae43068d5157a7014033b2',
-	        clientId: '76c3279c838349e98d799054919aa2df',
-	        userId: '2040104098'
-	    });
-	    feed.run();
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

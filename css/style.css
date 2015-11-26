@@ -191,18 +191,58 @@ header {
   position: relative;
 }
 
-header img {
-  width: 60%;
-}
-
-header div.headerText {
-  width: 40%;
-}
-
 header video {
   min-width: 100%;
   min-height: 100vh;
   position: absolute;
+  z-index: 1;
+}
+
+header .headerOverlay {
+  position: absolute;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+header div.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  z-index: 3;
+  border-radius: 50%;
+  border: 10px solid white;
+  background-image: url("../images/logo.jpg");
+  background-size: 100%;
+}
+
+header div.headerButtons {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+header div.headerButtons div.headerButton {
+  background: white;
+  padding: 0 10px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 250px;
+  margin: 0 25px;
+}
+
+.contentWrapper {
+  width: 100%;
+  padding: 100px;
 }
 
 .instagram {
@@ -212,4 +252,8 @@ header video {
 .instagram img {
   width: 20%;
   padding: 10px;
+}
+
+.bio {
+  width: 100%;
 }

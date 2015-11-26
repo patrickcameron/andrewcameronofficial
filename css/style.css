@@ -237,6 +237,10 @@ header div.headerButtons div.headerButton {
   margin: 0 25px;
 }
 
+header div.headerButtons div.headerButton p {
+  font-weight: 600;
+}
+
 header div.chevronDown {
   z-index: 4;
   color: white;

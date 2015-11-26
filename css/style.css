@@ -171,6 +171,11 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 5em;
+  margin: 20px 0;
+}
+
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -198,19 +203,11 @@ header video {
   z-index: 1;
 }
 
-header .headerOverlay {
-  position: absolute;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  height: 100%;
-}
-
 header div.logo {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 250px;
   height: 250px;
   z-index: 3;
@@ -222,7 +219,7 @@ header div.logo {
 
 header div.headerButtons {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   width: 100%;
   z-index: 4;
   display: flex;
@@ -238,6 +235,24 @@ header div.headerButtons div.headerButton {
   display: inline-block;
   width: 250px;
   margin: 0 25px;
+}
+
+header div.chevronDown {
+  z-index: 4;
+  color: white;
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header div.chevronDown i {
+  font-size: 20px;
+}
+
+header div.chevronDown a {
+  color: white;
 }
 
 .contentWrapper {
@@ -256,4 +271,41 @@ header div.headerButtons div.headerButton {
 
 .bio {
   width: 100%;
+}
+
+.bio p {
+  line-height: 2;
+}
+
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }

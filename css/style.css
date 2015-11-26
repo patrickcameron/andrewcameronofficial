@@ -186,6 +186,9 @@ header {
   max-width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  background: black;
+  overflow: hidden;
+  position: relative;
 }
 
 header img {
@@ -194,6 +197,12 @@ header img {
 
 header div.headerText {
   width: 40%;
+}
+
+header video {
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
 }
 
 .instagram {

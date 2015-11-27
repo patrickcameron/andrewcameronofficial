@@ -365,6 +365,54 @@ footer {
   padding: 40px;
 }
 
+@media (max-width: 940px) {
+  .contentWrapper {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.ep img {
+    width: 320px;
+    height: 320px;
+  }
+  header p.wantItAll {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  section.ep {
+    flex-direction: column;
+  }
+  section.ep img {
+    display: block;
+    margin-bottom: 20px;
+  }
+  header {
+    min-height: 100vh;
+  }
+  header p.wantItAll {
+    margin-top: 20px;
+  }
+  header div.logo {
+    width: 175px;
+    height: 175px;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  .instagram img {
+    width: 50%;
+  }
+  .bio p {
+    font-size: 1.2em;
+  }
+  .socialMedia i {
+    font-size: 60px;
+  }
+}
+
 .floating {
   animation-name: floating;
   -webkit-animation-name: floating;

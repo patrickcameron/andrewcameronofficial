@@ -266,6 +266,10 @@ header div.headerButtons {
   text-align: center;
 }
 
+header div.headerButtons div.epButton {
+  cursor: pointer;
+}
+
 header div.headerButtons div.headerButton {
   background: white;
   padding: 0 10px;

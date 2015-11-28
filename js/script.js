@@ -19,4 +19,7 @@ $(function() {
 	  wrapAround: true,
 	  pageDots: false
 	});
+	$('.epButton').click(function() {
+		alert("The Coyote Off A Cliff ep is coming soon. Please join one of my social media accounts to stay connected!");
+	})
 });

@@ -201,6 +201,11 @@ header video {
   min-height: 100vh;
   position: absolute;
   z-index: 1;
+  background: transparent url("images/mobileposter.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header .header1 {
@@ -378,11 +383,18 @@ footer {
     height: 320px;
   }
   header p.wantItAll {
-    font-size: 80px;
+    font-size: 70px;
+  }
+  header div.logo {
+    width: 175px;
+    height: 175px;
+  }
+  header div.headerButtons div.headerButton p {
+    font-size: 0.9em;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .contentWrapper {
     padding: 0 10px;
   }
@@ -396,12 +408,19 @@ footer {
   header {
     min-height: 100vh;
   }
+  .header1 {
+    min-height: 100%;
+  }
+  header div.headerButtons div.headerButton {
+    margin: 0 10px;
+  }
   header p.wantItAll {
     margin-top: 20px;
+    font-size: 60px;
   }
   header div.logo {
-    width: 175px;
-    height: 175px;
+    width: 160px;
+    height: 160px;
   }
   h2 {
     font-size: 4em;
@@ -413,7 +432,7 @@ footer {
     font-size: 1.2em;
   }
   .socialMedia i {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 

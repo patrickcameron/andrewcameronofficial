@@ -194,6 +194,9 @@ header {
   background: black;
   overflow: hidden;
   position: relative;
+  background-image: url("../images/mobileposter.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 header video {
@@ -201,11 +204,6 @@ header video {
   min-height: 100vh;
   position: absolute;
   z-index: 1;
-  background: transparent url("images/mobileposter.jpg") no-repeat 0 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 header .header1 {
@@ -266,10 +264,6 @@ header div.headerButtons {
   text-align: center;
 }
 
-header div.headerButtons div.epButton {
-  cursor: pointer;
-}
-
 header div.headerButtons div.headerButton {
   background: white;
   padding: 0 10px;
@@ -314,13 +308,61 @@ section.ep {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.ep div.epCover {
+  margin-top: 40px;
+}
+
+section.ep img.epimg {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+section.ep div.downloadLinks {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+section.ep div.downloadLinks i {
+  font-size: 100px;
+  vertical-align: bottom;
+}
+
+section.ep div.downloadLinks img {
+  height: 100px;
+  width: 100px;
+}
+
+section.ep div.cdBaby {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
 }
 
-section.ep img {
-  width: 400px;
-  height: 400px;
-  margin: 0 20px;
+section.ep div.cdBaby p {
+  max-width: 100px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+section.getEp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .instagram {
@@ -344,7 +386,7 @@ section.ep img {
 }
 
 .gallery {
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 .socialMedia {
@@ -367,6 +409,52 @@ section.ep img {
   text-align: center;
 }
 
+section.contest {
+  text-align: center;
+  width: 100%;
+}
+
+section.contest a {
+  border-bottom: 1px solid black;
+  font-weight: 500;
+}
+
+section.contest p {
+  font-size: 1.5em;
+  line-height: 2.5;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section.contest table {
+  width: 500px;
+  margin: 30px auto;
+  border: 1px dotted black;
+}
+
+section.contest table i {
+  font-size: 50px;
+  vertical-align: bottom;
+  padding: 0 20px;
+  color: #cc9900;
+}
+
+section.contest tr {
+  margin: 10px auto;
+  width: 100px;
+  border: 1px dotted black;
+}
+
+section.contest .tableBG {
+  background-color: black;
+  width: 200px;
+  padding: 10px;
+}
+
+section.contest .tableBG p {
+  color: white;
+}
+
 footer {
   width: 100%;
   background: black;
@@ -379,33 +467,49 @@ footer {
   .contentWrapper {
     padding: 0 25px;
   }
+  header video {
+    display: none;
+  }
 }
 
-@media (max-width: 768px) {
-  section.ep img {
-    width: 320px;
-    height: 320px;
+@media (max-width: 885px) {
+  section.ep img.epimg {
+    width: 250px;
+    height: 250px;
+  }
+  section.ep div.downloadLinks img {
+    width: 60px;
+    height: 60px;
+  }
+  section.ep div.downloadLinks i {
+    font-size: 60px;
+  }
+  section.ep div.downloadLinks div.cdBaby p {
+    max-width: 60px;
+    font-size: 11px;
   }
   header p.wantItAll {
     font-size: 70px;
   }
-  header div.logo {
-    width: 175px;
-    height: 175px;
-  }
   header div.headerButtons div.headerButton p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
-@media (max-width: 490px) {
+@media (max-height: 450px) {
+  header {
+    height: 450px;
+  }
+}
+
+@media (max-width: 495px) {
   .contentWrapper {
     padding: 0 10px;
   }
-  section.ep {
+  section.ep div.epCover {
     flex-direction: column;
   }
-  section.ep img {
+  section.ep div.epCover img {
     display: block;
     margin-bottom: 20px;
   }
@@ -417,14 +521,12 @@ footer {
   }
   header div.headerButtons div.headerButton {
     margin: 0 10px;
+    flex: 1 0 auto;
+    width: 170px;
   }
   header p.wantItAll {
     margin-top: 20px;
     font-size: 60px;
-  }
-  header div.logo {
-    width: 160px;
-    height: 160px;
   }
   h2 {
     font-size: 4em;
@@ -434,6 +536,13 @@ footer {
   }
   .bio p {
     font-size: 1.2em;
+  }
+  section.contest p {
+    font-size: 1.2em;
+    max-width: 400px;
+  }
+  section.contest table {
+    width: 450px;
   }
   .socialMedia i {
     font-size: 50px;

@@ -186,6 +186,14 @@ a {
   color: black;
 }
 
+body.bioBackground {
+  background-color: black;
+  background-image: url('../images/bioPageBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 header {
   height: 100vh;
   width: 100%;
@@ -385,8 +393,34 @@ section.getEp {
   padding: 0 5px;
 }
 
+.bio a#moreBioLink {
+  color: blue;
+  text-decoration: underline;
+}
+
+.bio p.longerBio { 
+  display: none;
+}
+
+.longBio {
+  padding: 50px 20px;
+  color: white;
+  margin-top: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.longBio p {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
 .gallery {
   margin: 0 auto;
+}
+
+.gallery div.main-gallery {
+  min-height: 600px;
 }
 
 .socialMedia {
@@ -394,10 +428,22 @@ section.getEp {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 9999;
+  right: -5px;
+  top: 0;
+  margin: 0 auto;
+  background: rgba(241,241,241,0.5);
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.socialMedia a {
+  color: white;
 }
 
 .socialMedia i {
-  font-size: 80px;
+  font-size: 30px;
   margin: 0 20px;
 }
 
@@ -432,11 +478,9 @@ section.contest table {
   border: 1px dotted black;
 }
 
-section.contest table i {
-  font-size: 50px;
-  vertical-align: bottom;
-  padding: 0 20px;
-  color: #cc9900;
+section.contest table img {
+  vertical-align: top;
+  margin-right: 10px;
 }
 
 section.contest tr {
@@ -545,7 +589,7 @@ footer {
     width: 450px;
   }
   .socialMedia i {
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 

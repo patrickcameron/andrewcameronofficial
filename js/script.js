@@ -14,10 +14,18 @@ feed.run();
 
 $(function() {
 	$('span.year').text(year);
+
 	$('.main-gallery').flickity({
 	  contain: true,
 	  wrapAround: true,
-	  pageDots: false
+	  pageDots: false,
+	  imagesLoaded: true
 	});
+
 	smoothScroll.init();
+
+	$('a#moreBioLink').click(function(e) {
+		e.preventDefault();
+		$('p.longerBio').toggle();
+	});
 });

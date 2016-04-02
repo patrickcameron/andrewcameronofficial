@@ -146,6 +146,10 @@ body, figure {
   margin: 0;
 }
 
+body {
+  background: rgba(241,241,241,0.5);
+}
+
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -313,7 +317,28 @@ section {
   margin: 100px 0;
 }
 
+.socialMedia {
+  padding: 0 20px;
+  margin: 80px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  text-align: center;
+  line-height: 6;
+}
+
+.socialMedia a {
+  color: black;
+}
+
+.socialMedia i {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
 section.ep {
+  margin: 40px 0;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -435,7 +460,7 @@ div.bioFiller {
 div.bioTransparency {
   position: fixed;
   top: 0; bottom: 0; left: 0; right: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
   display: none;
 }
 
@@ -445,30 +470,6 @@ div.bioTransparency {
 
 .gallery div.main-gallery {
   min-height: 600px;
-}
-
-.socialMedia {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 9999;
-  right: 0;
-  top: 0;
-  margin: 0 auto;
-  background: rgba(241,241,241,0.5);
-  padding: 15px 10px;
-  border-bottom-left-radius: 5px;
-}
-
-.socialMedia a {
-  color: white;
-}
-
-.socialMedia i {
-  font-size: 30px;
-  margin: 0 20px;
 }
 
 .contact {
@@ -608,8 +609,8 @@ footer {
   section.contest table {
     width: 450px;
   }
-  .socialMedia i {
-    font-size: 20px;
+  .socialMedia {
+    max-width: 250px;
   }
 }
 

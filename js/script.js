@@ -24,19 +24,4 @@ $(function() {
 
 	smoothScroll.init();
 
-	$('a#moreBioLink').click(function(e) {
-		e.preventDefault();
-		$('p.longerBio').toggle();
-	});
-
-	if ($('body.bioBackground').length) {
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 50) {
-				$('div.bioTransparency').fadeIn( 1000 );
-			}
-			if ($(this).scrollTop() < 50) {
-				$('div.bioTransparency').fadeOut( 500 );
-			}
-		})
-	};
 });

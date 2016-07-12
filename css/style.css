@@ -33,6 +33,12 @@ h1 {
   font-size: 2em;
 }
 
+body.press h1 { 
+  font-size: 4.5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -178,6 +184,12 @@ h1, h2, h3, h4 {
 h2 {
   font-size: 5em;
   margin: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.5em;
+  margin-bottom: 25px;
 }
 
 p {
@@ -207,7 +219,8 @@ header {
   background: black;
   overflow: hidden;
   position: relative;
-  background-image: url("../images/mobileposter.jpg");
+  /*background-image: url("../images/mobileposter.jpg");*/
+  background-image: url("../images/mobileposter2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -223,7 +236,7 @@ header .header1 {
   width: 100%;
   min-height: 50%;
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -268,7 +281,7 @@ header p.wantItAll {
 
 header div.headerButtons {
   position: absolute;
-  bottom: 10%;
+  bottom: 14%;
   width: 100%;
   z-index: 4;
   display: flex;
@@ -295,7 +308,7 @@ header div.chevronDown {
   color: white;
   margin: auto;
   position: absolute;
-  bottom: 20px;
+  bottom: 17px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -325,7 +338,7 @@ section {
   justify-content: space-around;
   max-width: 800px;
   text-align: center;
-  line-height: 6;
+  line-height: 1;
 }
 
 .socialMedia a {
@@ -419,15 +432,6 @@ section.getEp {
   padding: 0 5px;
 }
 
-.bio a#moreBioLink {
-  color: blue;
-  text-decoration: underline;
-}
-
-.bio p.longerBio { 
-  display: none;
-}
-
 div.bioFiller {
   width: 100%;
   height: 85vh;
@@ -472,52 +476,13 @@ div.bioTransparency {
   min-height: 600px;
 }
 
+.pressGallery {
+  max-height: 600px;
+  margin-top: 50px;
+}
+
 .contact {
   text-align: center;
-}
-
-section.contest {
-  text-align: center;
-  width: 100%;
-}
-
-section.contest a {
-  border-bottom: 1px solid black;
-  font-weight: 500;
-}
-
-section.contest p {
-  font-size: 1.5em;
-  line-height: 2.5;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-section.contest table {
-  width: 500px;
-  margin: 30px auto;
-  border: 1px dotted black;
-}
-
-section.contest table img {
-  vertical-align: top;
-  margin-right: 10px;
-}
-
-section.contest tr {
-  margin: 10px auto;
-  width: 100px;
-  border: 1px dotted black;
-}
-
-section.contest .tableBG {
-  background-color: black;
-  width: 200px;
-  padding: 10px;
-}
-
-section.contest .tableBG p {
-  color: white;
 }
 
 footer {

@@ -39,6 +39,15 @@ body.press h1 {
   text-align: center;
 }
 
+section.sellsheet {
+  text-align: center;
+}
+
+img.sellsheet {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -177,7 +186,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'slabo 13px', sans-serif;
   font-weight: 700;
 }
 
@@ -274,7 +283,7 @@ header p.wantItAll {
   color: white;
   font-weight: 700;
   font-size: 120px;
-  font-family: 'Oswald';
+  font-family: 'slabo 13px';
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -321,6 +330,10 @@ header div.chevronDown a {
   color: white;
 }
 
+main {
+  position: relative;
+}
+
 .contentWrapper {
   width: 100%;
   padding: 0 100px;
@@ -331,8 +344,8 @@ section {
 }
 
 .socialMedia {
-  padding: 0 20px;
-  margin: 80px auto 0 auto;
+  padding: 100px 0 0 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -433,6 +446,7 @@ section.pressLink a h2:hover {
 
 .instagram {
   width: 100%;
+  display: none;
 }
 
 .instagram img {
@@ -498,6 +512,10 @@ div.bioTransparency {
 .pressGallery {
   max-height: 600px;
   margin-top: 50px;
+}
+
+.pressGallery .gallery-cell img {
+  max-height: 600px;
 }
 
 .contact {
